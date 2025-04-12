@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container bg-dark text-white">
+        <h1>FORMULARIOS NO BOOTSTRAP</h1>
+    <hr>
+        <form action="" class="was-validated">
+             <div class="mb-3 ">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite aqui:" required> 
+                <div class="invalid-feedback">Por favor, informe seu nome</div>
+                <div class="valid-feedback">Parabens, você informou seu nome</div> 
+            </div>
+            <div class="mb-3">
+                <label for="Sobrenome" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="Sobrenome" placeholder="Digite o sobrenome:" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="curso" class="form-label">Curso</label>
+            <select class="form-select" name="curso" id="curso">
+                <option value="">Selecione</option>
+                <option value="js">Java script</option>
+                <option value="bs">Bootstrap</option>
+            </select>
+            </div>
+            <div class="form-switch">
+                <input type="checkbox" class="form-check-input" name="termos" id="termos">
+                <label for="termos" class="form-check-label">Aceita os termos?</label>
+            </div>
+            <div class="form-check ">
+                <input type="checkbox" class="form-check-input" name="termos1" id="termos1">
+                <label for="termos1" class="form-check-label">Aceita os termos?</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="genero" id="masculino">
+                <label for="masculino" class="form-check-label">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="genero" id="Feminino">
+                <label for="Feminino" class="form-check-label">Feminino</label>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Avaliação</label>
+                <input type="range" class="form-range" name="avaliação" id="avaliação" min="0" max="10">
+            </div>
+            <div class="mb-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                </div>
+              </div>
+              <div class="row">
+                <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+                </div>
+              </div>
+        </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
